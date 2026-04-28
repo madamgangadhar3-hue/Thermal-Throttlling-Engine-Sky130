@@ -9,7 +9,7 @@
 ## 🧠 Extended System Description
 As process nodes shrink, transistor density and power density increase drastically. Without active thermal management, high-performance silicon can suffer from localized heating, leading to timing violations or permanent "thermal runaway."
 
-This project implements a dedicated, hardware-level **Thermal Throttling Engine** designed to sit inside a primary System-on-Chip (SoC). Instead of relying on slow, software-based polling, this standalone hardware module provides deterministic, real-time thermal protection with zero software overhead.
+This project implements a hardware-level **Thermal Throttling Engine** designed to sit inside a primary SoC. It provides deterministic, real-time thermal protection with zero software overhead.
 
 ---
 
