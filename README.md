@@ -1,12 +1,10 @@
-# 🛡️ Thermal Throttling Engine: Sky130 Physical Design
+## 📂 Repository File Structure
 
-## Project Overview
-An optimized thermal management system for SkyWater 130nm silicon. Architected for high-reliability sequential monitoring.
-
-## 📊 Performance Metrics
-- **Slack:** +9.22 ns (Timing MET)
-- **Area:** 65.06 µm²
-- **Sign-off:** 0 DRC, 0 LVS, 0 Antenna violations
-
-## 🛠️ Tools
-OpenLane, Yosys, OpenROAD, OpenSTA, Magic, Netgen, KLayout.
+| File / Folder | Engineering Purpose |
+| :--- | :--- |
+| **`thermal_controller.gds`** | **The Blueprint:** The final manufacturable silicon layout. |
+| **`drc.rpt`** | **Physical Sign-off:** Proves 0 Design Rule Check (DRC) violations. |
+| **`39-thermal_controller.lvs.rpt`** | **Circuit Sign-off:** Layout vs. Schematic (LVS) match proof. |
+| **`41-antenna_violators.rpt`** | **Routing Sign-off:** Proves 0 antenna violations. |
+| **`31-rcx_sta.max.rpt`** | **Performance Proof:** Static Timing Analysis (STA) showing MET slack. |
+| **`thermal_controller/`** | **The Logic:** Folder containing the Verilog (`.v`) RTL source code. |
